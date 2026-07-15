@@ -1,10 +1,202 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Forestry Fire Operations Suite</title><link rel='stylesheet' href='../Framework/css/ffos-theme.css'><link rel='stylesheet' href='../Framework/css/ffos-layout.css'></head><body><header class='ffos-app-header'><div class='ffos-brand'><img src='../Framework/assets/logo/forestry-corporation.jpg' alt='Forestry Corporation logo' onerror="this.style.display='none'"><div><div class='ffos-title'>Forestry Fire Operations Suite</div><div class='ffos-subtitle'>Developer Launcher · Foundation v1.11</div></div></div><div class='ffos-badge'>Offline-first</div></header><main class='ffos-shell'><div class='ffos-two-column'><section><h2>Applications</h2><div class='ffos-grid modules'><section class='ffos-card ffos-module-card'><div class='ffos-card-body'><div class='ffos-module-meta'><span class='ffos-badge dev'>Development</span><span class='ffos-muted'>5.4.1</span></div><h3>Incident Action Plan</h3><p class='ffos-muted'>Simple-fire IAP builder with A3 publishing and map reverse.</p><div class='ffos-module-actions'><button class='ffos-button secondary' onclick="FFOS.toast('Module placeholder — connect the current release here.')">Details</button><button class='ffos-button' onclick="FFOS.openModule('../Applications/Incident Action Plan/index.html')">Open</button></div></div></section><section class='ffos-card ffos-module-card'><div class='ffos-card-body'><div class='ffos-module-meta'><span class='ffos-badge'>Production Candidate</span><span class='ffos-muted'>2.0</span></div><h3>Daily SITREP</h3><p class='ffos-muted'>Daily operational situation reporting with flexible panels, live publishing and custom layouts.</p><div class='ffos-module-actions'><button class='ffos-button secondary' onclick="FFOS.toast('Module placeholder — connect the current release here.')">Details</button><button class='ffos-button' onclick="FFOS.openModule('../Applications/SITREP/index.html')">Open</button></div></div></section>
-<section class='ffos-card ffos-module-card'><div class='ffos-card-body'>
-<div class='ffos-module-meta'><span class='ffos-badge dev'>Production Candidate</span><span class='ffos-muted'>1.0</span></div>
-<h3>Point Weather Forecast</h3>
-<p class='ffos-muted'>Converts BoM IWF PDF, Excel, CSV, pasted text or forecast images into the Point Forecast CSV template.</p>
-<div class='ffos-module-actions'>
-<button class='ffos-button secondary' onclick="FFOS.toast('Migrated from Point Weather Forecast Generator v1.2.')">Details</button>
-<button class='ffos-button' onclick="FFOS.openModule('../Applications/Point Weather Forecast/index.html')">Open</button>
-</div></div></section>
-<section class='ffos-card ffos-module-card'><div class='ffos-card-body'><div class='ffos-module-meta'><span class='ffos-badge dev'>Production Candidate</span><span class='ffos-muted'>v3.4.1</span></div><h3>Weather Dashboard</h3><p class='ffos-muted'>FFOS weather analysis, risk timelines, back burn windows and operational briefing outputs.</p><div class='ffos-module-actions'><button class='ffos-button secondary' onclick="FFOS.toast('Module placeholder — connect the current release here.')">Details</button><button class='ffos-button' onclick="FFOS.openModule('../Applications/Weather/index.html')">Open</button></div></div></section><section class='ffos-card ffos-module-card'><div class='ffos-card-body'><div class='ffos-module-meta'><span class='ffos-badge '>Production</span><span class='ffos-muted'>1.5.1</span></div><h3>Fire Behaviour Calculator</h3><p class='ffos-muted'>Forest fire behaviour calculations and hourly analysis.</p><div class='ffos-module-actions'><button class='ffos-button secondary' onclick="FFOS.toast('Module placeholder — connect the current release here.')">Details</button><button class='ffos-button' onclick="FFOS.openModule('../Applications/Fire Behaviour/index.html')">Open</button></div></div></section><section class='ffos-card ffos-module-card'><div class='ffos-card-body'><div class='ffos-module-meta'><span class='ffos-badge beta'>Beta</span><span class='ffos-muted'>2.0</span></div><h3>Hotspot Monitor</h3><p class='ffos-muted'>Satellite hotspot monitoring and tracking.</p><div class='ffos-module-actions'><button class='ffos-button secondary' onclick="FFOS.toast('Module placeholder — connect the current release here.')">Details</button><button class='ffos-button' onclick="FFOS.openModule('../Applications/Hotspot Monitor/index.html')">Open</button></div></div></section><section class='ffos-card ffos-module-card'><div class='ffos-card-body'><div class='ffos-module-meta'><span class='ffos-badge planned'>Planned</span><span class='ffos-muted'>Planned</span></div><h3>Resource Readiness</h3><p class='ffos-muted'>Weekly wildfire resource readiness and escalation planning.</p><div class='ffos-module-actions'><button class='ffos-button secondary' onclick="FFOS.toast('Module placeholder — connect the current release here.')">Details</button><button class='ffos-button' onclick="FFOS.openModule('../Applications/Resource Readiness/index.html')">Open</button></div></div></section></div></section><aside class='ffos-stack'><section class='ffos-card'><div class='ffos-card-header'>Foundation status</div><div class='ffos-card-body'><p><strong>Framework:</strong> v1.0</p><p><strong>Sprint:</strong> Foundation</p><p><strong>Principle:</strong><br>The software should do the administration so people can do the incident management.</p></div></section><section class='ffos-card'><div class='ffos-card-header'>Shared FFOS Publisher</div><div class='ffos-card-body'><p><strong>Clean publication isolation</strong></p><p class='ffos-muted'>Daily SITREP v2.5 prints only the cloned A3/A4 publication canvas. Editor controls and forms are excluded.</p></div></section><section class='ffos-card'><div class='ffos-card-header'>Parking lot</div><div class='ffos-card-body'><p class='ffos-muted'>Briefing mode, validation, hospital lookup, shared incident files, ArcGIS integration.</p></div></section></aside></div></main><footer class='ffos-footer'>FFOS Foundation v1.11 · Publisher v1.0 · IAP v5.4.1 · Daily SITREP v2.5 · Point Weather Forecast v1.0 · Weather Dashboard v3.4.1</footer><script src='../Framework/js/ffos-ui.js'></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Forestry Fire Operations Suite</title>
+  <link rel="stylesheet" href="../Framework/css/ffos-theme.css">
+  <link rel="stylesheet" href="../Framework/css/ffos-layout.css">
+  <link rel="stylesheet" href="../Framework/css/ffos-controls.css">
+  <style>
+    .modules {
+      grid-template-columns:repeat(3,minmax(0,1fr))!important;
+      align-items:stretch;
+    }
+    .ffos-module-card {
+      width:auto!important;
+      min-width:0!important;
+      margin:0!important;
+      grid-column:auto!important;
+    }
+    .ffos-module-card .ffos-card-body {
+      height:100%;
+      display:flex;
+      flex-direction:column;
+    }
+    .ffos-module-card h3 {
+      margin:10px 0 8px;
+    }
+    .ffos-module-card p {
+      flex:1;
+    }
+    .ffos-module-actions {
+      margin-top:auto;
+    }
+    @media(max-width:1000px) {
+      .modules {grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    }
+    @media(max-width:650px) {
+      .modules {grid-template-columns:1fr!important}
+    }
+  </style>
+</head>
+<body>
+<header class="ffos-app-header">
+  <div class="ffos-brand">
+    <img src="../Framework/assets/logo/forestry-corporation.jpg" alt="Forestry Corporation logo" onerror="this.style.display='none'">
+    <div>
+      <div class="ffos-title">Forestry Fire Operations Suite</div>
+      <div class="ffos-subtitle">Developer Launcher · Foundation v1.17.1</div>
+    </div>
+  </div>
+  <div class="ffos-badge">Offline-first</div>
+</header>
+
+<main class="ffos-shell">
+  <div class="ffos-two-column">
+    <section>
+      <h2>Applications</h2>
+      <div class="ffos-grid modules">
+        <section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge dev">Production Candidate</span>
+      <span class="ffos-muted">0.5</span>
+    </div>
+    <h3>Forestry Resource Planner</h3>
+    <p class="ffos-muted">Weekly regional readiness, resource coordination, publication history and NSW overview.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Weekly regional readiness and resource coordination.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/Resource Planner/index.html')">Open</button>
+    </div>
+  </div>
+</section><section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge dev">Production Candidate</span>
+      <span class="ffos-muted">1.1</span>
+    </div>
+    <h3>Total Incident Register</h3>
+    <p class="ffos-muted">Incident recording, impact tracking, resource reporting and Excel register export.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Guided incident entry based on the Total Incidents workbook.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/Total Incident Register/index.html')">Open</button>
+    </div>
+  </div>
+</section><section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge dev">Development</span>
+      <span class="ffos-muted">5.4.2</span>
+    </div>
+    <h3>Incident Action Plan</h3>
+    <p class="ffos-muted">Simple-fire IAP builder with A3 publishing, flexible layout and weather synchronisation.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Incident Action Plan builder.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/Incident Action Plan/index.html')">Open</button>
+    </div>
+  </div>
+</section><section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge">Production Candidate</span>
+      <span class="ffos-muted">2.7</span>
+    </div>
+    <h3>Daily SITREP</h3>
+    <p class="ffos-muted">Daily operational situation reporting with A3, A4 landscape and A4 portrait publishing.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Daily operational situation reporting.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/SITREP/index.html')">Open</button>
+    </div>
+  </div>
+</section><section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge">Production</span>
+      <span class="ffos-muted">1.6</span>
+    </div>
+    <h3>Fire Behaviour Calculator</h3>
+    <p class="ffos-muted">Forest fire behaviour calculations, hourly spreadsheet analysis and Weather Dashboard handoff.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Forest fire behaviour calculator.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/Fire Behaviour/index.html')">Open</button>
+    </div>
+  </div>
+</section><section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge dev">Production Candidate</span>
+      <span class="ffos-muted">3.4.1</span>
+    </div>
+    <h3>Weather Dashboard</h3>
+    <p class="ffos-muted">Weather analysis, risk timelines, back burn windows and operational briefing outputs.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Weather analysis and operational briefing.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/Weather/index.html')">Open</button>
+    </div>
+  </div>
+</section><section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge dev">Production Candidate</span>
+      <span class="ffos-muted">1.0</span>
+    </div>
+    <h3>Point Weather Forecast</h3>
+    <p class="ffos-muted">Converts BoM IWF PDF, Excel, CSV, pasted text or images into the Point Forecast CSV template.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Point Weather Forecast generator.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/Point Weather Forecast/index.html')">Open</button>
+    </div>
+  </div>
+</section><section class="ffos-card ffos-module-card">
+  <div class="ffos-card-body">
+    <div class="ffos-module-meta">
+      <span class="ffos-badge beta">Beta</span>
+      <span class="ffos-muted">2.0</span>
+    </div>
+    <h3>Hotspot Monitor</h3>
+    <p class="ffos-muted">Satellite hotspot monitoring and tracking.</p>
+    <div class="ffos-module-actions">
+      <button class="ffos-button secondary" onclick="FFOS.toast('Satellite hotspot monitoring.')">Details</button>
+      <button class="ffos-button" onclick="FFOS.openModule('../Applications/Hotspot Monitor/index.html')">Open</button>
+    </div>
+  </div>
+</section>
+      </div>
+    </section>
+
+    <aside class="ffos-stack">
+      <section class="ffos-card">
+        <div class="ffos-card-header">Foundation status</div>
+        <div class="ffos-card-body">
+          <p><strong>Framework:</strong> v1.0</p>
+          <p><strong>Sprint:</strong> Foundation</p>
+          <p><strong>Principle:</strong><br>The software should do the administration so people can do the incident management.</p>
+        </div>
+      </section>
+      <section class="ffos-card">
+        <div class="ffos-card-header">Latest module</div>
+        <div class="ffos-card-body">
+          <p><strong>FFOS Total Incident Register v1.1</strong></p>
+          <p class="ffos-muted">Camera detection and improved total, SPD plantation and hardwood plantation area recording.</p>
+        </div>
+      </section>
+      <section class="ffos-card">
+        <div class="ffos-card-header">Parking lot</div>
+        <div class="ffos-card-body">
+          <p class="ffos-muted">Briefing mode, validation, hospital lookup, shared incident files and ArcGIS integration.</p>
+        </div>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<footer class="ffos-footer">
+  FFOS Foundation v1.17.1 · IAP v5.4.2 · Daily SITREP v2.7 · Weather Dashboard v3.4.1 · Fire Behaviour v1.6 · Resource Planner v0.5 · Total Incident Register v1.1
+</footer>
+
+<script src="../Framework/js/ffos-utils.js"></script>
+<script src="../Framework/js/ffos-storage.js"></script>
+<script src="../Framework/js/ffos-ui.js"></script>
+</body>
+</html>
